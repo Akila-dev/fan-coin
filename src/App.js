@@ -12,9 +12,9 @@ import "./App.css";
 function App() {
 	return (
 		<div className="bg-[--bg] min-h-screen">
-			{/* <div className="-z-10">
+			<div className="-z-10">
 				<Particles />
-			</div> */}
+			</div>
 			<div className="z-[10000] relative">
 				<header className="">
 					<Navbar />
