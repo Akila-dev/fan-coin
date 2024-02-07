@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FaXTwitter } from "react-icons/fa6";
-import { SlGlobe } from "react-icons/sl";
+import { FaTelegramPlane } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 
 import logo from "../assets/fancoin.png";
@@ -18,7 +18,7 @@ const Navbar = () => {
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
 					<FaXTwitter className="social-icons" />{" "}
-					<SlGlobe className="social-icons" />{" "}
+					<FaTelegramPlane className="social-icons" />{" "}
 					<SiMedium className="social-icons" />
 				</div>
 			</div>

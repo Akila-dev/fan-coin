@@ -1,3 +1,7 @@
+.gradient1{
+	background: var(--gradient-bg);
+}
+
 .particles-container {
 	position: fixed;
 	top: 0;

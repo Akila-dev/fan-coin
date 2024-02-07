@@ -21,22 +21,24 @@ function App() {
 				</header>
 
 				{/* Hero */}
-				<section className="py-[20px] container flex flex-col items-center gap-[50px]">
-					<Countdown />
+				<section className="py-[20px] container">
+					<div className="text-center flex flex-col items-center gap-[30px] md:gap-[50px] max-w-[900px] mx-auto mb-[0]">
+						<Countdown />
 
-					<div className="text-center space-y-2">
-						<h1>FANCOIN</h1>
-						<h4>Where Community meets Crypto</h4>
+						<div className="text-center space-y-2">
+							<h1>FANCOIN</h1>
+							<h4>Where Community meets Crypto</h4>
+						</div>
+
+						<h3>Stake your FAN</h3>
+
+						<InputWallet />
 					</div>
-
-					<h3>Check your FAN</h3>
-
-					<InputWallet />
 				</section>
 
 				{/* About */}
-				<section className="container grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[100px]">
-					<div className="lg:h-full flex flex-col justify-center space-y-10">
+				<section className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-[50px] xl:gap-[100px] mb-[50px] lg:mb-0">
+					<div className="lg:h-full flex flex-col justify-center space-y-5 lg:space-y-10 order-2 lg:order-1">
 						<h1>
 							Welcome to FANCOIN - <span>Where Community Meets Crypto</span>
 						</h1>
@@ -49,7 +51,7 @@ function App() {
 							today!
 						</p>
 					</div>
-					<div className="w-full h-[100vw] md:h-[500px] lg:h-screen">
+					<div className="w-full h-[100vw] md:h-[500px] lg:h-[60vw] xl:h-screen order-1 lg:order-2">
 						<Planet />
 					</div>
 				</section>
