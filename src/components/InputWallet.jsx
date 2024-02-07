@@ -19,7 +19,7 @@ const InputWallet = () => {
 					className="w-full bg-transparent focus:outline-none"
 				/>
 				{/* <PiCopySimpleFill className="text-xl cursor-pointer" /> */}
-				<p>Max</p>
+				<p className="text-[--highlight2]">Max</p>
 			</div>
 			<button className="bg-[--bg] py-2 lg:px-4 rounded-lg lg:min-w-[170px] order-3 lg:order-3 px-5">
 				Stake

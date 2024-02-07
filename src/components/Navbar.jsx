@@ -17,8 +17,8 @@ const Navbar = () => {
 					<p className="text-xl">FanCoin</p>
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
-					<FaXTwitter className="social-icons" />{" "}
-					<FaTelegramPlane className="social-icons" />{" "}
+					<FaXTwitter className="social-icons" />
+					<FaTelegramPlane className="social-icons" />
 					<SiMedium className="social-icons" />
 				</div>
 			</div>

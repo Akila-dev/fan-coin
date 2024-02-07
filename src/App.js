@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
 	return (
-		<div className="bg-[--bg] min-h-screen">
+		<div className="home-bg min-h-screen">
 			<div className="-z-10">
 				<Particles />
 			</div>
@@ -40,7 +40,8 @@ function App() {
 				<section className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-[50px] xl:gap-[100px] mb-[50px] lg:mb-0">
 					<div className="lg:h-full flex flex-col justify-center space-y-5 lg:space-y-10 order-2 lg:order-1">
 						<h1>
-							Welcome to FANCOIN - <span>Where Community Meets Crypto</span>
+							Welcome to <span className="text-[--highlight2]">FANCOIN</span> -
+							Where Community Meets Crypto
 						</h1>
 						<p>
 							Discover the next-generation cryptocurrency designed for fans, by
