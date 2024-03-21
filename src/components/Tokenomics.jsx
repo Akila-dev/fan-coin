@@ -12,9 +12,9 @@ const TokenomicsCard = ({ index, title, value }) => (
 			}}
 			className="social-gradient1 rounded-[20px] py-5 px-7 min-h-[200px] flex justify-evenly items-center flex-col cursor-pointer"
 		>
-			<h3 className="text-[--highlight2] text-[20px] font-semibold text-center">
+			<p className="text-[--highlight2] text-[18px] lg:text-[20px] text-center uppercase">
 				{title}
-			</h3>
+			</p>
 
 			<h1 className="text-[white] text-[35px] md:text-[40px]">{value}</h1>
 		</div>
