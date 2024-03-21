@@ -1,13 +1,25 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
-const CountdownDisplay = ({ x, y, unit }) => (
+const COUNTDOWN_TARGET = new Date("2024-03-25T00:00:00");
+
+const getTimeLeft = () => {
+	const totalTimeLeft = COUNTDOWN_TARGET - new Date();
+	const hours = Math.floor(totalTimeLeft / (1000 * 60 * 60));
+
+	const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
+	const seconds = Math.floor((totalTimeLeft / 1000) % 60);
+
+	return { hours, minutes, seconds };
+};
+
+const CountdownDisplay = ({ value, unit }) => (
 	<div className="flex flex-col items-center gap-2 w-full">
-		<div className="gp-flex gap-1 md:gap-2 text-lg md:text-xl w-full">
-			<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-xl md:text-2xl xl:text-3xl">
-				{x}
+		<div className="gp-flex gap-1 md:gap-1 text-lg md:text-xl w-full">
+			<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-xl md:text-2xl xl:text-3xl shadow-md">
+				{value >= 10 ? value.toString().slice(0, 1) : 0}
 			</div>
-			<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-xl md:text-2xl xl:text-3xl">
-				{y}
+			<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-xl md:text-2xl xl:text-3xl shadow-md">
+				{value >= 10 ? value.toString().slice(1) : value}
 			</div>
 		</div>
 		<div className="capitalize">{unit}</div>
@@ -15,13 +27,44 @@ const CountdownDisplay = ({ x, y, unit }) => (
 );
 
 const Countdown = () => {
+	const [timeLeft, setTimeLeft] = useState(() => getTimeLeft());
+
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setTimeLeft(getTimeLeft());
+		}, 1000);
+
+		return () => {
+			clearInterval(timer);
+		};
+	}, []);
+
 	return (
 		<div className="w-full h-[200px] max-w-[1024p] bg-[--car] rounded-3xl flex flex-col items-center justify-center gap-5 gradient1 p-4">
-			<h2>Going live in:</h2>
+			<h2 className="text-lg">Going live in:</h2>
 			<div className="flex gap-3 md:gap-5 w-full max-w-[325px] md:max-w-[400px] lg:max-w-[505px]">
-				<CountdownDisplay x="0" y="0" unit="days" />
+				{Object.entries(timeLeft).map((el) => {
+					const label = el[0];
+					const value = el[1];
+
+					// const label = el[0];
+					// const value1 = el[1].slice(0, 1);
+					// const value2 = el[1].slice(1);
+
+					return (
+						<CountdownDisplay
+							key={label}
+							// x={value.slice(0,1)}
+							// y={value.slice(1)}
+							value={value}
+							unit={label}
+						/>
+					);
+				})}
+
+				{/* <CountdownDisplay x="0" y="0" unit="days" />
 				<CountdownDisplay x="0" y="0" unit="hours" />
-				<CountdownDisplay x="0" y="0" unit="minutes" />
+				<CountdownDisplay x="0" y="0" unit="minutes" /> */}
 			</div>
 		</div>
 	);

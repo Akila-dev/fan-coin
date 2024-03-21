@@ -30,11 +30,7 @@ const Tokenomics = () => {
 				>
 					Allocations
 				</p>
-				<h2
-					className={`text-center text-[white] font-bold md:text-[55px] sm:text-[50px] xs:text-[40px] text-[30px] leading-[120%]`}
-				>
-					Tokenomics
-				</h2>
+				<h1 className={`text-center text-[white]`}>Tokenomics</h1>
 			</div>
 
 			<div className="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
