@@ -26,13 +26,16 @@ const Footer = () => {
 					<p>Copyright ©️ 2022 FANCOIN All Rights Reserved</p>
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
-					<div className="social-container gradient1">
+					<a
+						href="https://x.com/FanCoin_Sol"
+						className="social-container social-gradient1"
+					>
 						<FaXTwitter className="social-icons" />{" "}
-					</div>
-					<div className="social-container gradient1">
+					</a>
+					<div className="social-container social-gradient1">
 						<FaTelegramPlane className="social-icons" />{" "}
 					</div>
-					<div className="social-container gradient1">
+					<div className="social-container social-gradient1">
 						<SiMedium className="social-icons" />
 					</div>
 				</div>

@@ -5,6 +5,7 @@ import {
 	InputWallet,
 	Planet,
 	Footer,
+	Tokenomics,
 } from "./components";
 
 import "./App.css";
@@ -30,7 +31,7 @@ function App() {
 							<h4>Where Community meets Crypto</h4>
 						</div>
 
-						<h3>Stake your FAN</h3>
+						{/* <h3>Stake your FAN</h3> */}
 
 						<InputWallet />
 					</div>
@@ -56,6 +57,8 @@ function App() {
 						<Planet />
 					</div>
 				</section>
+
+				<Tokenomics />
 
 				{/* Footer */}
 				<Footer />

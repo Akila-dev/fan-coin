@@ -1,6 +1,12 @@
 .gradient1{
 	background: var(--gradient-bg);
 }
+.social-gradient1{
+	background: var(--gradient-bg);
+}
+.social-gradient1:hover{
+	background: var(--highlight);
+}
 
 .particles-container {
 	position: fixed;

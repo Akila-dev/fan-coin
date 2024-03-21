@@ -22,6 +22,7 @@
 body{
     overflow-x: hidden;
     background:var(--bg);
+    color: white,
 }
 
 .home-bg{
@@ -29,7 +30,7 @@ body{
     background-attachment: fixed;
 }
 
-*{
+p,a,button,h1,h2,h3,h4,h5,h6,span,div{
     @apply text-[--white]
 }
 
@@ -38,7 +39,7 @@ h1, h2, h3{
 }
 
 h1{
-    @apply text-3xl md:text-4xl xl:text-5xl
+    @apply text-3xl md:text-4xl xl:text-5xl 
 }
 h3{
     @apply text-2xl
@@ -56,9 +57,13 @@ h4{
 }
 
 .social-icons{
-    @apply text-[1.7rem] md:text-3xl
+    @apply text-[1.7rem] md:text-3xl hover:text-[--highlight] cursor-pointer
 }
 
 .social-container{
     @apply bg-[--card] p-3 rounded-lg
+}
+
+.social-container .social-icons{
+    @apply hover:text-[--white]
 }
