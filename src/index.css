@@ -67,3 +67,7 @@ h4{
 .social-container .social-icons{
     @apply hover:text-[--white]
 }
+
+.button-1{
+    @apply gap-2 flex items-center justify-center bg-[--bg] py-2 lg:px-4 rounded-lg lg:min-w-[170px] hover:bg-[--highlight]
+}

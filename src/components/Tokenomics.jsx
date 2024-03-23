@@ -10,13 +10,13 @@ const TokenomicsCard = ({ index, title, value }) => (
 				scale: 1,
 				speed: 450,
 			}}
-			className="social-gradient1 rounded-[20px] py-5 px-7 min-h-[200px] flex justify-evenly items-center flex-col cursor-pointer"
+			className="social-gradient1 rounded-[20px] py-8 px-7 min-h-[125px] md:min-h-[150px] flex justify-evenly items-center flex-col cursor-pointer"
 		>
-			<p className="text-[--highlight2] text-[18px] lg:text-[20px] text-center uppercase">
+			<p className="text-center sm:text-[18px] text-[14px] uppercase tracking-wider mb-3 text-[--highlight2]">
 				{title}
 			</p>
 
-			<h1 className="text-[white] text-[35px] md:text-[40px]">{value}</h1>
+			<h1 className="text-[white] md:text-[35px]">{value}</h1>
 		</div>
 	</Tilt>
 );

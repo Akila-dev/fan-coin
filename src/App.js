@@ -8,6 +8,8 @@ import {
 	Tokenomics,
 } from "./components";
 
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+
 import "./App.css";
 
 function App() {
@@ -44,17 +46,35 @@ function App() {
 							Welcome to <span className="text-[--highlight2]">FANCOIN</span> -
 							Where Community Meets Crypto
 						</h1>
-						<p>
-							Discover the next-generation cryptocurrency designed for fans, by
-							fans. FANCOIN empowers a vibrant community, offering semless
-							transactions, secure investments, and a decentralized ecosystem.
-							<br />
-							Dive into the future of digital currency with us - Join FANCOIN
-							today!
+						<p className="flex flex-col gap-2">
+							<span>
+								Become a Fanatic, invest in your favorite web3 projects and ride
+								to Valhala. FANCOIN empowers a vibrant community, enabling users
+								to discover low caps early while also engaging in social
+								contests of their favorite web3 projects for redeemable points
+								and rewards.
+							</span>
+							<span className="">
+								Dive into the future of digital currency with us.
+							</span>
+							<span>Join FANCOIN today!</span>
 						</p>
+						<div>
+							{/* <button className="bg-[--highlight] hover:bg-[--highlight2] px-5 py-2 rounded-lg gp-flex gap-2">
+								<HiOutlineRocketLaunch />
+								Launch Dapps
+							</button> */}
+							<button className="px-5 py-2 rounded-lg gp-flex gap-2 social-gradient1">
+								<HiOutlineRocketLaunch className="text-[--highlight2]" />
+								Launch Dapps
+							</button>
+						</div>
 					</div>
-					<div className="w-full h-[100vw] md:h-[500px] lg:h-[60vw] xl:h-screen order-1 lg:order-2">
-						<Planet />
+					<div className="w-full h-[100vw] md:h-[500px] lg:h-[60vw] xl:h-screen order-1 lg:order-2 pointer-events-none relative">
+						<div className="w-full h-[100vw] md:h-[500px] lg:h-[60vw] xl:h-screen relative -z-10">
+							<Planet />
+						</div>
+						<div className="w-full h-[100vw] md:h-[500px] lg:h-[60vw] xl:h-screen absolute top-0 left-0 "></div>
 					</div>
 				</section>
 

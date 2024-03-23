@@ -27,14 +27,21 @@ const Footer = () => {
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
 					<a
+						target="_blank"
+						rel="noreferrer"
 						href="https://x.com/FanCoin_Sol"
 						className="social-container social-gradient1"
 					>
 						<FaXTwitter className="social-icons" />{" "}
 					</a>
-					<div className="social-container social-gradient1">
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href="https://t.me/+NzXf4-5huKM5ODlk"
+						className="social-container social-gradient1"
+					>
 						<FaTelegramPlane className="social-icons" />{" "}
-					</div>
+					</a>
 					<div className="social-container social-gradient1">
 						<SiMedium className="social-icons" />
 					</div>

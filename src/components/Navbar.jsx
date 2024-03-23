@@ -17,10 +17,16 @@ const Navbar = () => {
 					<p className="text-xl">FanCoin</p>
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
-					<a href="https://x.com/FanCoin_Sol">
+					<a target="_blank" rel="noreferrer" href="https://x.com/FanCoin_Sol">
 						<FaXTwitter className="social-icons" />
 					</a>
-					<FaTelegramPlane className="social-icons" />
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href="https://t.me/+NzXf4-5huKM5ODlk"
+					>
+						<FaTelegramPlane className="social-icons" />
+					</a>
 					<SiMedium className="social-icons" />
 				</div>
 			</div>
