@@ -7,13 +7,13 @@ export const tokenomics = [
 		title: "Total Token Supply",
 		value: "1.5B",
 	},
-	{
-		title: "Private Sale",
-		value: "20%",
-	},
+	// {
+	// 	title: "Private Sale",
+	// 	value: "20%",
+	// },
 	{
 		title: "Liquidity",
-		value: "60%",
+		value: "80%",
 	},
 	{
 		title: "Reserve & Marketing",

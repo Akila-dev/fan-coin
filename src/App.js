@@ -49,10 +49,11 @@ function App() {
 						<p className="flex flex-col gap-2">
 							<span>
 								Become a Fanatic, invest in your favorite web3 projects and ride
-								to Valhala. FANCOIN empowers a vibrant community, enabling users
-								to discover low caps early while also engaging in social
-								contests of their favorite web3 projects for redeemable points
-								and rewards.
+								to Valhalla. FANCOIN empowers a vibrant community via our
+								Socialfi and Launchpad infrastructure, enabling users to
+								discover low caps early while also engaging in Social contests
+								of their favorite web3 projects for Redeemable
+								Points and Rewards.
 							</span>
 							<span className="">
 								Dive into the future of digital currency with us.
