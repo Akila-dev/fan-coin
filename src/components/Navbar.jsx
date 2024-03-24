@@ -11,10 +11,10 @@ const Navbar = () => {
 		<div className="py-5">
 			<div className="container gp-flex justify-between">
 				<div className="gap-2 gp-flex">
-					<div className="h-[40px] w-[40px]">
+					<div className="h-[37.5px] w-[37.5px]">
 						<img src={logo} alt="logo" className="w-full h-full object-cover" />
 					</div>
-					<p className="text-xl">FanCoin</p>
+					<p className="text-xl pb-1">FanCoin</p>
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
 					<a target="_blank" rel="noreferrer" href="https://x.com/FanCoin_Sol">
