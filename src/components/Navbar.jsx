@@ -23,7 +23,7 @@ const Navbar = () => {
 					<a
 						target="_blank"
 						rel="noreferrer"
-						href="https://t.me/+NzXf4-5huKM5ODlk"
+						href="https://t.me/FancoinOnSolana"
 					>
 						<FaTelegramPlane className="social-icons" />
 					</a>
