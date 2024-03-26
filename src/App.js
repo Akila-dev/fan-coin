@@ -39,7 +39,7 @@ function App() {
 
 						<div className="text-center space-y-1 md:space-y-2">
 							<h1>FANCOIN</h1>
-							<h4 className="text-[--highlight2]">
+							<h4 className="text-[--highlight2">
 								Where Community meets Crypto
 							</h4>
 							<p className="flex flex-col gap-3 md:gap-3 max-w-[750px] pt-2">
