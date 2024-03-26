@@ -18,10 +18,10 @@ const CountdownDisplay = ({ value, unit }) =>
 	unit === "timeout" || (
 		<div className="flex flex-col items-center gap-2 w-full">
 			<div className="gp-flex gap-1 md:gap-1 text-lg md:text-xl w-full">
-				<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-2xl md:text-3xl xl:text-4xl shadow-md font-semibold">
+				<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--bg] rounded-lg w-full text-2xl md:text-3xl xl:text-4xl shadow-md font-semibold">
 					{value >= 10 ? value.toString().slice(0, 1) : 0}
 				</div>
-				<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--highlight] rounded-lg w-full text-2xl md:text-3xl xl:text-4xl shadow-md font-semibold">
+				<div className="h-[50px] md:h-[60px] lg:h-[70px] flex items-center justify-center bg-[--bg] rounded-lg w-full text-2xl md:text-3xl xl:text-4xl shadow-md font-semibold">
 					{value >= 10 ? value.toString().slice(1) : value}
 				</div>
 			</div>
