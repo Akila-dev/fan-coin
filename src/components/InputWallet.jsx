@@ -7,8 +7,8 @@ import logoWhite from "../assets/fancoin.png";
 
 const InputWallet = () => {
 	return (
-		<div className="w-full gradient1 p-4 rounded-lg gap-3 lg:gap-4 grid grid-cols-2 lg:grid-cols-3">
-			<button className="button-1 col-span-2 lg:col-span-1 group">
+		<div className="w-full gradient1 p-4 rounded-lg gap-3 lg:gap-4 grid grid-cols-2">
+			{/* <button className="button-1 col-span-2 lg:col-span-1 group">
 				<div className="h-[20px] w-[20px] relative">
 					<img
 						src={logo}
@@ -22,7 +22,7 @@ const InputWallet = () => {
 					/>
 				</div>
 				<p className="">Read Litepaper</p>
-			</button>
+			</button> */}
 			<button className="button-1">
 				<p className="">Buy $Fan</p>
 			</button>
