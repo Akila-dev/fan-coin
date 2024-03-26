@@ -28,18 +28,9 @@ function App() {
 					<div className="text-center flex flex-col items-center gap-[30px] md:gap-[50px] max-w-[900px] mx-auto mb-[0]">
 						<Countdown />
 
-						<div className="text-center space-y-1 md:space-y-2">
+						<div className="text-center space-y-2">
 							<h1>FANCOIN</h1>
-							<h4 className="text-[--highlight]">
-								Where Community meets Crypto
-							</h4>
-							<p className="flex flex-col gap-2 max-w-[750px] pt-2">
-								In the realm of Solana, a new force emerges: Fancoin and its
-								Fanatics. More than just a token, Fancoin ignites a movement
-								fueled by passion. Join us on this thrilling journey, united by
-								our love for Fancoin. Together, we'll soar to new heights and
-								sail to Valhalla 🚀.
-							</p>
+							<h4>Where Community meets Crypto</h4>
 						</div>
 
 						{/* <h3>Stake your FAN</h3> */}
@@ -57,27 +48,25 @@ function App() {
 						</h1>
 						<p className="flex flex-col gap-2">
 							<span>
-								FANCOIN empowers a vibrant community, enabling users to discover
-								projects early while also engaging in Social contests of their
-								favorite web3 projects for Redeemable Points and Rewards.
+								Become a Fanatic, invest in your favorite web3 projects and ride
+								to Valhalla. FANCOIN empowers a vibrant community via our
+								Socialfi and Launchpad infrastructure, enabling users to
+								discover low caps early while also engaging in Social contests
+								of their favorite web3 projects for Redeemable
+								Points and Rewards.
 							</span>
-							<span>Dive into the future of digital currency with us.</span>
+							<span className="">
+								Dive into the future of digital currency with us.
+							</span>
 							<span>Join FANCOIN today!</span>
 						</p>
-						<div className="flex gap-2 md:gap-3">
+						<div>
 							{/* <button className="bg-[--highlight] hover:bg-[--highlight2] px-5 py-2 rounded-lg gp-flex gap-2">
 								<HiOutlineRocketLaunch />
 								Launch Dapps
 							</button> */}
-							<button className="w-full md:w-auto md:px-5 py-2 rounded-lg social-gradient1 group">
-								{/* <HiOutlineRocketLaunch className="text-[--highlight2]" /> */}
-								<span className="text-[--highlight2] group-hover:text-white inline-block mr-2">
-									$
-								</span>
-								Buy Fancoin
-							</button>
-							<button className="w-full md:w-auto md:px-5 py-2 rounded-lg social-gradient1 group">
-								<HiOutlineRocketLaunch className="text-[--highlight2] group-hover:text-white inline-block mr-2" />
+							<button className="px-5 py-2 rounded-lg gp-flex gap-2 social-gradient1">
+								<HiOutlineRocketLaunch className="text-[--highlight2]" />
 								Launch Dapps
 							</button>
 						</div>
@@ -90,7 +79,7 @@ function App() {
 					</div>
 				</section>
 
-				{/* <Tokenomics /> */}
+				<Tokenomics />
 
 				{/* Footer */}
 				<Footer />

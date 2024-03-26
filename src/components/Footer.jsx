@@ -3,7 +3,7 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
-import logo from "../assets/fancoin.png";
+import logo from "../assets/fancoin-colored.png";
 
 const Footer = () => {
 	return (
