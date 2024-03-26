@@ -1,3 +1,13 @@
+// import {
+// 	Navbar,
+// 	Particles,
+// 	Countdown,
+// 	InputWallet,
+// 	Planet,
+// 	Footer,
+// 	Tokenomics,
+// } from "./components";
+
 import {
 	Navbar,
 	Particles,
@@ -5,7 +15,6 @@ import {
 	InputWallet,
 	Planet,
 	Footer,
-	Tokenomics,
 } from "./components";
 
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
