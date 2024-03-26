@@ -2,8 +2,8 @@ import React from "react";
 
 // import { PiCopySimpleFill } from "react-icons/pi";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import logo from "../assets/fancoin-colored.png";
-import logoWhite from "../assets/fancoin.png";
+// import logo from "../assets/fancoin-colored.png";
+// import logoWhite from "../assets/fancoin.png";
 
 const InputWallet = () => {
 	return (
