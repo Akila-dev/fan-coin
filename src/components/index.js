@@ -1,4 +1,7 @@
 export { default as Navbar } from "./Navbar";
+export { default as Hero } from "./Hero";
+export { default as Button } from "./Button";
+
 export { default as Particles } from "./Particles";
 export { default as Countdown } from "./Countdown";
 export { default as InputWallet } from "./InputWallet";

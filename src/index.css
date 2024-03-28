@@ -5,8 +5,9 @@
 :root {
     --font-family: "Manrope", sans-serif;
 
-    --bg: #0f121e;
+    --bg: #f1f1f1;
     --card: #364061;
+    --text: #010101;
 
     --highlight: #5B54E0;
     --highlight2: #E85EB8;
@@ -25,13 +26,8 @@ body{
     color: white,
 }
 
-.home-bg{
-    background: var(--highlight-gradient-bg);
-    background-attachment: fixed;
-}
-
 p,a,button,h1,h2,h3,h4,h5,h6,span,div{
-    @apply text-[--white]
+    @apply text-[--text]
 }
 
 h1, h2, h3{
@@ -39,17 +35,21 @@ h1, h2, h3{
 }
 
 h1{
+    @apply text-[12.5vw] md:text-6xl xl:text-7xl font-black drop-shadow-[0_7.15px_1.9px_rgba(0,0,0,1)] text-white
+}
+
+h2{
     @apply text-3xl md:text-4xl xl:text-5xl 
 }
 h3{
-    @apply text-2xl
+    @apply text-lg uppercase font-medium
 }
 h4{
     @apply text-lg
 }
 
 .container{
-    @apply px-[1rem] md:px-[3rem] xl:px-[6rem] max-w-[1440px] mx-auto
+    @apply px-[1rem] md:px-[3rem] xl:px-[6rem] max-w-[1240px] mx-auto
 }
 
 .gp-flex{
@@ -57,7 +57,7 @@ h4{
 }
 
 .social-icons{
-    @apply text-[1.7rem] md:text-3xl hover:text-[--highlight] cursor-pointer
+    @apply text-[1.7rem] md:text-3xl text-white hover:bg-white hover:text-[--text] cursor-pointer h-[40px] w-[40px] md:h-[45px] md:w-[45px] p-[6px] rounded-lg
 }
 
 .social-container{
@@ -68,6 +68,14 @@ h4{
     @apply hover:text-[--white]
 }
 
+.button-1-pre{
+    @apply rounded-lg absolute top-[-5.5px] left-[-6.5px] w-full h-full bg-white border-2 border-[--text]
+}
 .button-1{
-    @apply gap-2 flex items-center justify-center bg-[--bg] py-2 lg:px-4 rounded-lg lg:min-w-[170px] hover:bg-[--highlight]
+    @apply gap-2 flex items-center justify-center text-white bg-[--text] py-[10px] md:py-[12px] lg:px-4 rounded-lg min-w-[200px] border-2 border-[--text]
+}
+
+
+.gradient-bg-1{
+    background: radial-gradient(white, rgba(255,255,255,0.9), rgba(0,0,0,0));
 }
