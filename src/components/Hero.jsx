@@ -2,19 +2,22 @@ import React from "react";
 
 import bg from "../assets/bg-2.jpg";
 import logo from "../assets/logo1.png";
-import { Button } from "../components";
+import { About, Button } from "../components";
+import { CgEreader } from "react-icons/cg";
 
 const Hero = () => {
 	return (
-		<div className="w-full h-[100vh] relative">
-			<img
-				src={bg}
-				alt="background"
-				className="w-full h-full object-cover object-bottom md:object-top"
-			/>
-			<div className="absolute top-0 w-full h-full flex items-center justify-center gradient-bg-1">
-				<div className="flex flex-col items-center container">
-					<div className="max-w-[800px] mx-auto text-center">
+		<div className="w-full relative bg-white">
+			<div className="w-full absolute top-0 h-full">
+				<img
+					src={bg}
+					alt="background"
+					className="w-full h-full object-cover object-bottom md:object-top"
+				/>
+			</div>
+			<div className="relative top-0 w-full gradient-bg-1">
+				<div className="flex flex-col justify-end items-center container h-screen max-h-[600px] lg:max-h-[700px]">
+					<div className="max-w-[800px] flex flex-col justify-end pb-[100px] md:pb-[100px] text-center">
 						<div className="flex justify-center items-center gap-1">
 							{/* <img
 								src={logo}
@@ -25,7 +28,7 @@ const Hero = () => {
 							<img
 								src={logo}
 								alt="logo"
-								className="h-[50px] w-full md:h-[80px] xl:h-[100px] object-contain"
+								className="h-[60px] w-full md:h-[100px] xl:h-[150px] object-contain pl-3"
 							/>
 						</div>
 						<h3 className="text-center pt-8 pb-6">
@@ -33,10 +36,14 @@ const Hero = () => {
 							fans unite, and dreams come true.
 						</h3>
 						<div>
-							<Button text="read more" />
+							<Button
+								text="read more"
+								icon={<CgEreader className="text-lg w-[20px] object-stretch" />}
+							/>
 						</div>
 					</div>
 				</div>
+				<About />
 			</div>
 		</div>
 	);

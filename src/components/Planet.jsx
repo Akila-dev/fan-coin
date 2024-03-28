@@ -1,50 +1,61 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { useRef, useState, useEffect } from "react";
+import { Canvas, useLoader } from "@react-three/fiber";
+// import { useScroll } from "@react-three/drei";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion-3d";
 
-import CanvasLoader from "./Loader";
-import modelUrl from "../models/earth.glb";
+import { TextureLoader } from "three/src/loaders/TextureLoader";
 
-const Planet = () => {
-	const planet = useGLTF(modelUrl);
-
-	return (
-		<primitive
-			object={planet.scene}
-			scale={2.5}
-			position-y={0}
-			rotation-y={0}
-		/>
-	);
+const getWindowsDimension = () => {
+	const { innerWidth: width, innerHeight: height } = window;
+	return {
+		width,
+		height,
+	};
 };
 
-const PlanetCanvas = () => {
-	return (
-		<Canvas
-			shadows
-			frameloop="demand"
-			dpr={[1, 2]}
-			gl={{ preserveDrawingBuffer: true }}
-			camera={{
-				fov: 45,
-				near: 0.1,
-				far: 200,
-				position: [-4, 3, 6],
-			}}
-		>
-			<Suspense fallback={<CanvasLoader />}>
-				<OrbitControls
-					autoRotate
-					enableZoom={false}
-					maxPolarAngle={Math.PI / 2}
-					minPolarAngle={Math.PI / 2}
-				/>
-				<Planet />
+export default function Earth({ container }) {
+	const [screenSize, setScreenSize] = useState(getWindowsDimension());
+	useEffect(() => {
+		const handleResize = () => {
+			setScreenSize(getWindowsDimension());
+		};
 
-				<Preload all />
-			</Suspense>
+		window.addEventListener("resize", handleResize);
+
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	const scene = useRef();
+
+	const { scrollYProgress } = useScroll({
+		target: container,
+		offset: ["start end", "end start"],
+	});
+
+	const [color, normal, aoMap] = useLoader(TextureLoader, [
+		"/earth/color.png",
+		"/earth/normal.png",
+		"/earth/occlusion.png",
+	]);
+
+	const scale = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
+	const scaleLG = useTransform(scrollYProgress, [0, 0.5], [0.5, 1]);
+
+	return (
+		<Canvas ref={scene}>
+			<ambientLight intensity={0.1} />
+
+			<directionalLight intensity={3.5} position={[1, 0, -0.25]} />
+
+			<motion.mesh
+				scale={screenSize.height > screenSize.width ? scale : scaleLG}
+				rotation-y={scrollYProgress}
+			>
+				<sphereGeometry args={[1, 64, 64]} />
+
+				<meshStandardMaterial map={color} normalMap={normal} aoMap={aoMap} />
+			</motion.mesh>
 		</Canvas>
 	);
-};
-
-export default PlanetCanvas;
+}

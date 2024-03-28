@@ -1,6 +1,7 @@
 import {
 	Navbar,
 	Hero,
+	Roadmap,
 	// Particles,
 	// Countdown,
 	// InputWallet,
@@ -15,8 +16,11 @@ import "./App.css";
 function App() {
 	return (
 		<div className="bg-white min-h-screen relative">
-			<Hero />
-			<Navbar />
+			<div className="relative z-10">
+				<Hero />
+				<Navbar />
+			</div>
+			<Roadmap />
 		</div>
 	);
 }

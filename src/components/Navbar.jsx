@@ -9,8 +9,8 @@ import logo from "../assets/fancoin.png";
 
 const Navbar = () => {
 	return (
-		<div className="fixed top-0 w-full py-4 px-[1rem] md:px-[3rem] h-[100px] flex items-center">
-			<div className=" w-full bg-black py-3 px-[1rem] md:px-8 rounded-[5rem] gp-flex justify-between">
+		<div className="fixed top-0 w-full py-4 px-4 md:px-[3rem] h-[100px] flex items-center">
+			<div className=" w-full bg-black py-3 px-5 md:px-8 rounded-[5rem] gp-flex justify-between shadow-lg shadow-[#ffffff50]">
 				<div className="gap-2 gp-flex">
 					<div className="h-[37.5px] w-[37.5px]">
 						<img src={logo} alt="logo" className="w-full h-full object-cover" />
@@ -20,7 +20,9 @@ const Navbar = () => {
 						alt="logo"
 						className="w-full h-[20px] object-contain"
 					/> */}
-					<p className="text-xl pb-1 text-white font-bold">FanCoin</p>
+					<p className="text-xl pb-1 text-white font-bold hidden sm:block">
+						FanCoin
+					</p>
 				</div>
 				<div className="gp-flex gap-1 md:gap-2">
 					<a target="_blank" rel="noreferrer" href="https://x.com/FanCoin_Sol">
