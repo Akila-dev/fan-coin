@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { roadmap } from "../utils/constants";
-import { Particles } from "../components";
+// import { Particles } from "../components";
 
 const RoadmapCard = ({ activity, id }) => {
 	return (
@@ -57,9 +57,9 @@ const RoadmapCard = ({ activity, id }) => {
 const Roadmap = () => {
 	return (
 		<div className="relative bg-[--text] py-[50px] lg:[py-100px]">
-			<div className="absolute top-0 w-full h-full">
+			{/* <div className="absolute top-0 w-full h-full">
 				<Particles />
-			</div>
+			</div> */}
 			<motion.div className="text-center">
 				{/* <p className={`text-white`}>Steps to success</p> */}
 				<h1 className={`text-white`}>Roadmap</h1>

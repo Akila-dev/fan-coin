@@ -2,7 +2,8 @@
 	background: var(--gradient-bg);
 }
 .social-gradient1{
-	background: var(--gradient-bg);
+	/* background: var(--gradient-bg); */
+	background: var(--text)
 }
 .social-gradient1:hover{
 	background: var(--highlight);
@@ -19,7 +20,8 @@
 	align-items: center;
 	flex-direction: column;
 	object-fit: cover;
-	z-index: 0;
+	/* z-index: 0; */
+	pointer-events: none !important;
 }
 
 .canvas-loader {

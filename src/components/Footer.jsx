@@ -3,11 +3,22 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
-import logo from "../assets/fancoin-colored.png";
+import logo from "../assets/fancoin.svg";
 
 const Footer = () => {
 	return (
-		<div className="py-[50px]">
+		<div className="py-[50px] space-y-10 ">
+			<div className="container">
+				<div className="max-w-[800px mx-auto text-cente space-y-3 text-justify">
+					<h3 className="capitalize font-[350]">
+						Join us as we champion the power of technology and fan culture,
+						forging connections and spreading joy one moment at a time.
+					</h3>
+					<h3 className="capitalize font-[350]">
+						Together, let's make Fancoin the heart of the fun-loving community.
+					</h3>
+				</div>
+			</div>
 			<div className="container flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5">
 				<div className="gap-2 gp-flex">
 					<div className="h-[50px] w-[50px]">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Particles } from "../components";
+import { Button } from "../components";
 import { tokenomics } from "..//utils/constants";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
@@ -12,10 +12,10 @@ const TokenomicsCard = ({ index, title, value }) => (
 
 const Tokenomics = () => {
 	return (
-		<div className="relative first-letter:p-5 md:p-7 lg:p-10 py-8 md:py-10 bg-[--text] rounded-xl h-full space-y-10 pointer-events-auto">
-			<div className="absolute top-0 w-full h-full">
+		<div className="relative p-5 md:p-7 lg:p-10 py-8 md:py-10 bg-[--text] rounded-xl h-full space-y-10 pointer-events-auto">
+			{/* <div className="absolute top-0 w-full h-full z-[-10] !pointer-events-none">
 				<Particles />
-			</div>
+			</div> */}
 			<div className="relative space-y-2">
 				<h2 className="text-white">TOKENOMICS</h2>
 				<p className="text-white tracking-wider">

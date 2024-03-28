@@ -10,7 +10,7 @@ import logo from "../assets/fancoin.png";
 const Navbar = () => {
 	return (
 		<div className="fixed top-0 w-full py-4 px-4 md:px-[3rem] h-[100px] flex items-center">
-			<div className=" w-full bg-black py-3 px-5 md:px-8 rounded-[5rem] gp-flex justify-between shadow-lg shadow-[#ffffff50]">
+			<div className=" w-full bg-[#000000f0] backdrop-blur-xl py-3 px-5 md:px-8 rounded-[5rem] gp-flex justify-between shadow-xl shadow-[#ffffff20] border border-white">
 				<div className="gap-2 gp-flex">
 					<div className="h-[37.5px] w-[37.5px]">
 						<img src={logo} alt="logo" className="w-full h-full object-cover" />
