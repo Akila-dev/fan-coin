@@ -20,18 +20,44 @@
     --highlight-gradient-bg:radial-gradient(circle, rgba(91,84,224,0.1) 0%, rgba(15,18,30,1) 45%, rgba(15,18,30,1) 100%);
 }
 
+/* {
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  } */
+
+  /* {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
 body{
     overflow-x: hidden;
     background:var(--bg);
-    color: white,
+    color: white;
 }
 
-p,a,button,h1,h2,h3,h4,h5,h6,span,div{
+p,a,h1,h2,h3,h4,h5,h6,span,div{
+    font-family: "Jura", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     @apply text-[--text]
 }
 
-h1, h2, h3{
-    @apply font-semibold
+h1, h2, h3, button{
+    font-family: "BioRhyme", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    @apply uppercase
 }
 
 h1{

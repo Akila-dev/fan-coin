@@ -5,6 +5,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 
 import logo from "../assets/fancoin.png";
+// import logoText from "../assets/logo-b.png";
 
 const Navbar = () => {
 	return (
@@ -14,7 +15,12 @@ const Navbar = () => {
 					<div className="h-[37.5px] w-[37.5px]">
 						<img src={logo} alt="logo" className="w-full h-full object-cover" />
 					</div>
-					<p className="text-xl pb-1 text-white">FanCoin</p>
+					{/* <img
+						src={logoText}
+						alt="logo"
+						className="w-full h-[20px] object-contain"
+					/> */}
+					<p className="text-xl pb-1 text-white font-bold">FanCoin</p>
 				</div>
 				<div className="gp-flex gap-1 md:gap-2">
 					<a target="_blank" rel="noreferrer" href="https://x.com/FanCoin_Sol">

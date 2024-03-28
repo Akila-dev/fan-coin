@@ -1,7 +1,7 @@
 import React from "react";
 
 import bg from "../assets/bg-2.jpg";
-import logo from "../assets/fancoin.svg";
+import logo from "../assets/logo1.png";
 import { Button } from "../components";
 
 const Hero = () => {
@@ -16,12 +16,17 @@ const Hero = () => {
 				<div className="flex flex-col items-center container">
 					<div className="max-w-[800px] mx-auto text-center">
 						<div className="flex justify-center items-center gap-1">
-							<img
+							{/* <img
 								src={logo}
 								alt="logo"
 								className="h-[50px] w-[50px] md:h-[60px] md:w-[60px]"
 							/>
-							<h1 className="pb-2">FANCOIN</h1>
+							<h1 className="pb-2">FANCOIN</h1> */}
+							<img
+								src={logo}
+								alt="logo"
+								className="h-[50px] w-full md:h-[80px] xl:h-[100px] object-contain"
+							/>
 						</div>
 						<h3 className="text-center pt-8 pb-6">
 							A beacon in the Cryptoverse where community meets Crypto, where
