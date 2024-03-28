@@ -5,7 +5,6 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 
 import logo from "../assets/fancoin.png";
-// import logoText from "../assets/logo-b.png";
 
 const Navbar = () => {
 	return (
