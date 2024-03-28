@@ -22,7 +22,9 @@ function App() {
 			<Footer />
 
 			<Navbar />
-			<Particles />
+			<div className="!pointer-events-none">
+				<Particles />
+			</div>
 		</div>
 	);
 }

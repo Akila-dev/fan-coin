@@ -23,15 +23,13 @@ const RoadmapCard = ({ activity, id }) => {
 			icon={
 				<div className="flex justify-center items-center w-full h-full">
 					<div className="w-[60%] h-[60%] object-contain flex items-center justify-center">
-						<p className="text-white">{id}</p>
+						<h3 className="text-white">{id}</h3>
 					</div>
 				</div>
 			}
 		>
 			<div>
-				<h3 className="text-[--text] text-[24px] font-semibold">
-					{activity.title}
-				</h3>
+				<h4 className="text-[--text]">{activity.title}</h4>
 				{/* <p
 					className="text-[--text] text-[16px] font-medium"
 					style={{ margin: 0 }}

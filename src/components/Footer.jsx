@@ -34,7 +34,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div>
-					<p>Copyright ©️ 2022 FANCOIN All Rights Reserved</p>
+					<p>Copyright ©️ 2024 FANCOIN All Rights Reserved</p>
 				</div>
 				<div className="gp-flex gap-3 md:gap-4">
 					<a

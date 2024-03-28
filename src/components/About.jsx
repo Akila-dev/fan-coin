@@ -28,7 +28,7 @@ const About = () => {
 					/>
 				</div> */}
 			</div>
-			<div className="w-full pointer-events-none relative">
+			<div className="w-full relative">
 				<Tokenomics />
 			</div>
 		</section>
