@@ -1,14 +1,14 @@
 import {
 	Navbar,
 	Hero,
-	Particles,
-	Countdown,
-	InputWallet,
-	Planet,
-	Footer,
+	// Particles,
+	// Countdown,
+	// InputWallet,
+	// Planet,
+	// Footer,
 } from "./components";
 
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
+// import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 import "./App.css";
 
