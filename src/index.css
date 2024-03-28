@@ -92,11 +92,11 @@ p{
 }
 
 .social-icons{
-    @apply text-[1.7rem] md:text-3xl text-white hover:bg-white hover:text-[--text] cursor-pointer h-[40px] w-[40px] md:h-[45px] md:w-[45px] p-[6px] rounded-lg
+    @apply text-[1.7rem] md:text-3xl text-white hover:bg-white hover:text-[--text] cursor-pointer h-[40px] w-[40px] md:h-[45px] md:w-[45px] p-[6px] rounded-lg z-[1]
 }
 
 .social-container{
-    @apply bg-[--card] p-3 rounded-lg border-2 border-[--text]
+    @apply bg-[--card] p-3 rounded-lg border-2 border-[--text] z-[1]
 }
 
 /* .social-container .social-icons{

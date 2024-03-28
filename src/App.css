@@ -20,7 +20,7 @@
 	align-items: center;
 	flex-direction: column;
 	object-fit: cover;
-	/* z-index: 0; */
+	z-index: 1;
 	pointer-events: none !important;
 }
 

@@ -31,7 +31,7 @@ const Particles = (props) => {
 
 const ParticlesCanvas = () => {
 	return (
-		<div className="particles-container !pointer-events-none">
+		<div className="particles-container">
 			<Canvas camera={{ position: [0, 0, 1] }}>
 				<Suspense fallback={null}>
 					<Particles />

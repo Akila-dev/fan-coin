@@ -16,15 +16,13 @@ import "./App.css";
 function App() {
 	return (
 		<div className="bg-white min-h-screen relative">
-			<div className="relative">
+			<Particles />
+			<div className="relative !pointer-events-auto">
 				<Hero />
 				<Roadmap />
 				<Footer />
 			</div>
 
-			<div className="!pointer-events-none" style={{ pointerEvent: "none" }}>
-				<Particles />
-			</div>
 			<Navbar />
 		</div>
 	);

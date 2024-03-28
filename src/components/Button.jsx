@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = ({ text, icon, type }) => {
 	return (
-		<div className="relative inline-block group">
+		<div className="relative inline-block group z-[1]">
 			<span
 				className={`${
 					type === 2
@@ -14,7 +14,7 @@ const Button = ({ text, icon, type }) => {
 				className={`${
 					type === 2
 						? "button-2 relative group-hover:!bg-[--text] group-hover:!border-[--text] group-hover:!text-white group-hover:font-bold group-hover:shadow-sm group-hover:shadow-white"
-						: "button-1 relative group-hover:!bg-white group-hover:!border-[--text] group-hover:!text-[--text] group-hover:font-bold"
+						: "button-1 relative group-hover:!bg-white group-hover:!border-[--text] group-hover:!text-[--text] group-hover:font-bold !pointer-events-auto"
 				}`}
 			>
 				{icon}
