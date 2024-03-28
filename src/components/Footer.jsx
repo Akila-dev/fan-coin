@@ -41,20 +41,20 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 						href="https://x.com/FanCoin_Sol"
-						className="social-container social-gradient1"
+						className="social-container social-gradient1 group"
 					>
-						<FaXTwitter className="social-icons" />{" "}
+						<FaXTwitter className="social-icons group-hover:text-[--text]" />{" "}
 					</a>
 					<a
 						target="_blank"
 						rel="noreferrer"
 						href="https://t.me/FancoinOnSolana"
-						className="social-container social-gradient1"
+						className="social-container social-gradient1 group"
 					>
-						<FaTelegramPlane className="social-icons" />{" "}
+						<FaTelegramPlane className="social-icons group-hover:text-[--text]" />{" "}
 					</a>
-					<div className="social-container social-gradient1">
-						<SiMedium className="social-icons" />
+					<div className="social-container social-gradient1 group">
+						<SiMedium className="social-icons group-hover:text-[--text]" />
 					</div>
 				</div>
 			</div>

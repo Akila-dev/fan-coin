@@ -29,7 +29,7 @@ const RoadmapCard = ({ activity, id }) => {
 			}
 		>
 			<div>
-				<h4 className="text-[--text]">{activity.title}</h4>
+				<h3 className="text-[--text]">{activity.title}</h3>
 				{/* <p
 					className="text-[--text] text-[16px] font-medium"
 					style={{ margin: 0 }}

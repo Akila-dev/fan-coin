@@ -77,7 +77,7 @@ h3{
     @apply text-base md:text-lg uppercase font-medium
 }
 h4{
-    @apply text-lg md:text-[24px] font-semibold
+    @apply text-base font-semibold
 }
 p{
     @apply text-base
@@ -96,12 +96,12 @@ p{
 }
 
 .social-container{
-    @apply bg-[--card] p-3 rounded-lg
+    @apply bg-[--card] p-3 rounded-lg border-2 border-[--text]
 }
 
-.social-container .social-icons{
+/* .social-container .social-icons{
     @apply hover:text-[--white]
-}
+} */
 
 .button-1-pre{
     @apply rounded-lg absolute top-[-5.5px] left-[-6.5px] w-full h-full bg-white border-2 border-[--text]

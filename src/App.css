@@ -6,7 +6,7 @@
 	background: var(--text)
 }
 .social-gradient1:hover{
-	background: var(--highlight);
+	background: white;
 }
 
 .particles-container {
