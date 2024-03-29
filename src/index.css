@@ -6,18 +6,18 @@
     --font-family: "Manrope", sans-serif;
 
     --bg: #f1f1f1;
-    --card: #364061;
+    /* --card: #364061; */
     --text: #010101;
 
-    --highlight: #5B54E0;
+    /* --highlight: #5B54E0;
     --highlight2: #E85EB8;
-    --green: #56C7E7;
+    --green: #56C7E7; */
 
     --white:#ffffff;
 
-    --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+    /* --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
     --gradient-bg: linear-gradient(#364061 1.84%, #20263E 102.67%);
-    --highlight-gradient-bg:radial-gradient(circle, rgba(91,84,224,0.1) 0%, rgba(15,18,30,1) 45%, rgba(15,18,30,1) 100%);
+    --highlight-gradient-bg:radial-gradient(circle, rgba(91,84,224,0.1) 0%, rgba(15,18,30,1) 45%, rgba(15,18,30,1) 100%); */
 }
 
 /* {
@@ -96,7 +96,7 @@ p{
 }
 
 .social-container{
-    @apply bg-[--card] p-3 rounded-lg border-2 border-[--text] z-[1]
+    @apply p-2 rounded-lg border-2 border-[--text] z-[1]
 }
 
 /* .social-container .social-icons{

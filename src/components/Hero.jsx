@@ -16,8 +16,8 @@ const Hero = () => {
 				/>
 			</div>
 			<div className="relative top-0 w-full gradient-bg-1">
-				<div className="flex flex-col justify-end items-center container h-screen max-h-[600px] lg:max-h-[700px]">
-					<div className="max-w-[800px] flex flex-col justify-end pb-[100px] md:pb-[100px] text-center">
+				<div className="flex flex-col justify-center items-center container h-screen max-h-[700px]">
+					<div className="max-w-[800px] flex flex-col justify-center pb-[100px md:pb-[100px pt-[100px] text-center">
 						<div className="flex justify-center items-center gap-1">
 							{/* <img
 								src={logo}
@@ -32,7 +32,7 @@ const Hero = () => {
 							/>
 						</div>
 						<h3 className="text-center pt-8 pb-6">
-							A beacon in the Cryptoverse where community meets Crypto, where
+							A beacon in the Cryptoverse where community meets crypto, where
 							fans unite, and dreams come true.
 						</h3>
 						<div>
@@ -43,6 +43,8 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="relative gradient-bg-1">
 				<About />
 			</div>
 		</div>

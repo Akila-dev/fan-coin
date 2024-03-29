@@ -11,11 +11,11 @@ const Footer = () => {
 			<div className="container">
 				<div className="max-w-[800px mx-auto text-cente space-y-3 text-justify">
 					<h3 className="capitalize font-[350]">
-						Join us as we champion the power of technology and fan culture,
-						forging connections and spreading joy one moment at a time.
+						Join us as we embrace the power of technology and fan culture.
 					</h3>
 					<h3 className="capitalize font-[350]">
-						Together, let's make Fancoin the heart of the fun-loving community.
+						Together let's make Fancoin the heartbeat of the fun-loving
+						community.
 					</h3>
 				</div>
 			</div>

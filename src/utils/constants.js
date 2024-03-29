@@ -33,13 +33,13 @@ export const tokenomics = [
 		title: "LP Locked & Burned",
 		value: "100%",
 	},
-	{
-		title: "Burn Event",
-		value: "40%",
-	},
+	// {
+	// 	title: "Burn Event",
+	// 	value: "40%",
+	// },
 	{
 		title: "Contract Renounced",
-		value: "0%",
+		value: "Yes",
 	},
 ];
 
@@ -50,9 +50,10 @@ export const roadmap = [
 		iconBg: "#010101",
 		date: "March 2020 - April 2021",
 		points: [
-			"On Board Influencers",
-			"Get Raiding On Twitter",
+			"Stealth Launch",
 			"Build A Strong  Community",
+			"On-board Influencers",
+			"Get Raiding On Twitter",
 			"1000 Holders",
 			"1 Mil Mc",
 		],
@@ -63,7 +64,6 @@ export const roadmap = [
 		iconBg: "#010101",
 		date: "Jan 2021 - Feb 2022",
 		points: [
-			"Stealth Launch",
 			"More Influencers",
 			"Meme Contests",
 			"Apply For Cex Listings",
